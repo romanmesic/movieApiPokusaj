@@ -53,6 +53,17 @@ namespace MovieAPIpokusaj
             {
                 endpoints.MapControllers();
             });
+     
+        
         }
+    
+    
+    
+    
+    
+    
+    
+    
     }
+
 }

@@ -21,6 +21,9 @@ namespace MovieAPIpokusaj
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+     
+                
                 });
     }
+
 }
