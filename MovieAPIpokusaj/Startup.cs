@@ -22,6 +22,8 @@ namespace MovieAPIpokusaj
             Configuration = configuration;
         }
 
+
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -29,6 +31,8 @@ namespace MovieAPIpokusaj
         {
             services.AddControllers();
             services.AddDbContext<MoviesDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("MoviesDbContext")));
+            services.AddMvcCore();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
